@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultra-Thin Patch Monitoring Dashboard</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f4f7fa; margin: 0; padding: 0; }
+    header { background: #004466; color: white; padding: 1em; text-align: center; }
+    .container { padding: 2em; }
+    .card { background: white; padding: 1.5em; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 2em; }
+    h2 { color: #00334d; }
+    .status { font-size: 1.2em; }
+    .row { display: flex; gap: 1em; flex-wrap: wrap; }
+    .col { flex: 1; min-width: 250px; }
+    .alert { color: red; font-weight: bold; }
+    .safe { color: green; font-weight: bold; }
+    footer { text-align: center; padding: 1em; background: #ddeeff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Poly AI – Ultra-Thin Patch Monitoring</h1>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col card">
+        <h2>Real-Time Vitals</h2>
+        <p>Heartbeat: <span class="status safe">72 BPM</span></p>
+        <p>Fall Detection: <span class="status alert">No Fall Detected</span></p>
+      </div>
+
+      <div class="col card">
+        <h2>Location</h2>
+        <p>GPS Coordinates: <span class="status">26.9124° N, 75.7873° E</span></p>
+        <p>Network: <span class="status">eSIM (4G)</span></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col card">
+        <h2>Power Status</h2>
+        <p>Battery Level: <span class="status">80%</span></p>
+        <p>Charging Method: <span class="status">Body Heat (TEG)</span></p>
+      </div>
+
+      <div class="col card">
+        <h2>Connection Mode</h2>
+        <p>BLE: <span class="status safe">Connected</span></p>
+        <p>LoRa Backup: <span class="status">Standby</span></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Poly AI | Safety Patch Monitoring System
+  </footer>
+</body>
+</html>
